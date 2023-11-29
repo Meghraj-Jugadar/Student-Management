@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    	#container{
+    border: 2px solid;
+    height: 400px;
+    width: 400px;
+    border-radius: 30px;
+    text-align: center;
+    box-shadow: 4px 4px 5px brown;
+}
+    </style>
+</head>
+<body>
+    <center>
+        <div id="container">
+            <form action="Login" method="post" onsubmit="return validate()">
+                <h1>Login Form</h1>
+                <hr>
+                <br><br>
+                <label for="">Enter your ID:</label>
+                <br><br>
+                <input type="text" name="userId" id="userId" placeholder="Mobile Number">
+                <br><br>
+                <label for="">Enter your Password:</label>
+                <br><br>
+                <input type="password"  name="password" id="password" placeholder="Password">
+                <br><br>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </center>
+    <script>
+    function validate(){
+        let id=document.getElementById("userId").value;
+        var pas=document.getElementById("password").value;
+
+        if(id.value==""|| pas.value==""){
+            alert("Your ID or Password is Blank...")
+            return false;
+        }
+        else if(pas.length<8){
+            alert("Password length Must at least 8 character...");
+            return false;
+        }
+        else{
+            return true;
+        }
+    } 
+    </script>
+</body>
+</html>

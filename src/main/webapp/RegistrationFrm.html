@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style>
+	#container{
+    border: 2px solid;
+    height: 400px;
+    width: 400px;
+    border-radius: 30px;
+    text-align: center;
+    box-shadow: 4px 4px 5px brown;
+    margin-top: 40px;
+}
+</style>
+</head>
+<body>
+<center>
+	<h1>Registration Page</h1>
+    <a href="StaffHomePage.html">Home</a>
+    <a href="Search.html">Search</a>
+    <a href="LoginFrm.html">Login</a>
+    <a href="TeachLogut_handler">logout</a>
+    <br>
+    <div id="container">
+    <form action="Registration" method="post">
+        <div>
+            <label for="">Student Id:</label><br>
+            <input type="number" name="std_id" placeholder="Enter Student Id" value="00000" min="10000" max="99999" required>
+        </div>
+        <br>
+        <div>
+            <label for="">Full Name:</label><br>
+            <input type="text" name="std_name" placeholder="Enter Full Name" required>
+        </div>
+        <br>
+        <div>
+            <label for="">Phone:</label><br>
+            <input type="text" name="std_phone" placeholder="Enter Phone Number" required>
+        </div>
+        <br>
+        <div>
+            <label for="">Email:</label><br>
+            <input type="email" name="std_email" placeholder="Enter Email" required>
+        </div>
+        <br>
+       	<div>
+            <label for="">Password:</label><br>
+            <input type="password" name="std_password" placeholder="8 Characters only" required>
+        </div>
+        <br>
+       	<div>
+            <label for="">Confirm Password:</label><br>
+            <input type="text" name="std_conf_password" placeholder="Confirm Your Password" required>
+        </div>
+        <br>
+        <button type="submit">Submit</button>
+    </form>
+    </div>
+</center>
+</body>
+</html>
